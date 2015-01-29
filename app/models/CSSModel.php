@@ -2,7 +2,6 @@
 
 class RM_CSSModel extends RM_BaseModel {
     
-    
     /**
      * Function to create the file to hold the CSS file
      *
