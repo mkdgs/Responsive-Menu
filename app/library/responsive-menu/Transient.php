@@ -52,6 +52,7 @@ class RM_Transient {
         $walker = ResponsiveMenu::getOption( 'RMWalker' );
         
         $cachedMenu = wp_nav_menu( array(
+                'theme_location' => $name, // Add by Mkdgs
                 'menu' => $name,
                 'menu_class' => 'responsive-menu',
                 'walker' => ( !empty( $walker ) ) ? new $walker : '', // Add by Mkdgs
