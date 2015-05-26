@@ -614,6 +614,21 @@ class RM_JSModel extends RM_BaseModel {
 
         /*
         |--------------------------------------------------------------------------
+        | Finally Hide Appropriate Hidden Objects
+        |--------------------------------------------------------------------------
+        |
+        | This is the function that deals with toggling the toggle buttons
+        |
+        */                
+
+        $js .= "   
+
+            \$RMjQuery( '.rm-append-inactive' ).siblings( 'ul' ).css( 'display', 'none' );
+
+        ";
+
+        /*
+        |--------------------------------------------------------------------------
         | Menu Closing Options
         |--------------------------------------------------------------------------
         |
