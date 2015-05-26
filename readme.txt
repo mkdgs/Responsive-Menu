@@ -134,6 +134,10 @@ Alternatively:
 
 == Changelog ==
 
+= 2.6 (26th May 2015) =
+* Fixed Issue with Auto-Expanding Links
+* Fixed Issue with Data Folders Incorrect Location
+
 = 2.5 (20th May 2015) =
 * Fixed issue with duplicate sub menu arrows
 * Added option to set if menu is shown on left or right
