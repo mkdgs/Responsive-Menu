@@ -136,7 +136,7 @@ Alternatively:
 == Changelog ==
 
 = 2.7 (14th June 2015)
-* Added Navigation Tabs for Admin Pages (thanks to mkdgs for this!)
+* Added Navigation Tabs for Admin Pages -thanks to mkdgs for this!
 * Bugfixes
 
 = 2.6 (26th May 2015)
