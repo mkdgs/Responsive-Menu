@@ -129,17 +129,13 @@ Alternatively:
 
 3. Example Front End Expanded Menu
 
-4. Example Custom Front End Menu Button Image
-
-5. Example Custom Front End Expanded Menu
-
 == Changelog ==
 
-= 2.7 (14th June 2015)
+= 2.7 (14th June 2015) =
 * Added Navigation Tabs for Admin Pages -thanks to mkdgs for this!
 * Bugfixes
 
-= 2.6 (26th May 2015)
+= 2.6 (26th May 2015) =
 * Added Theme Location options - useful for Polylang - Thanks to mkdgs for this
 * Fixed Issue with Auto-Expanding Links
 * Fixed Issue with Data Folders Incorrect Location
