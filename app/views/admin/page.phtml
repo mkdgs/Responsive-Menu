@@ -233,39 +233,9 @@
             <h3><?php _e('Meta Tag Check', 'responsive-menu'); ?></h3>
 
             <table>
-
-                <tr>
-                    <td><h4><?php _e('Viewport Meta Tag Check', 'responsive-menu'); ?>
-
-                            <?php if ($portTag = self::checkViewPortTag(get_bloginfo('url'))) : ?>
-
-                                <span class='success'> - <?php _e('Below Viewport Meta Tag Found', 'responsive-menu'); ?></span>
-
-                                <?php
-                            else :
-
-                                $portTag = null;
-
-                            endif;
-                            ?>
-
-                        </h4> 
-                    </td>
-                </tr>
-                <tr><td>
-                        <?php if ($portTag) : ?>
-
-                            &lt;meta name='viewport' content='<?php echo $portTag; ?>' /&gt;
-
-                        <?php else : ?>
-
-                            <span class='error'><?php _e('Viewport Meta Tag Not Found', 'responsive-menu'); ?></span>
-
-                        <?php endif; ?>
-                    </td>
-                <tr>
+				<tr>
                     <td>
-                        <h4><?php _e('Recommended Metaport Tag', 'responsive-menu'); ?></h4>
+                        <h4><?php _e('Recommended Metaport Tag', 'responsive-menu-pro'); ?></h4>
                     </td>
                 </tr>
                 <tr>
@@ -277,8 +247,8 @@
                 <tr>
                     <td>                            
                         <h4 class="divider">
-                            <?php _e('Note', 'responsive-menu'); ?>: 
-                            <?php _e('This is only a reference guide and is not critical if you are seeing errors, these can usually be ignored', 'responsive-menu'); ?>.
+                            <?php _e('Note', 'responsive-menu-pro'); ?>: 
+                            <?php _e('This is only a reference guide and yours may vary slightly', 'responsive-menu-pro'); ?>.
                         </h4>
                     </td>
                 </tr>
@@ -1397,20 +1367,6 @@
 
 
         <h3><?php _e('Animation Settings', 'responsive-menu'); ?></h3>
-
-        <?php if ($data['RMAnim'] == 'push' && $portTag != 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no') : ?>
-
-            <span class='error'>
-                <?php _e('Warning: The Push Animation requires you to place the following meta tag in your site header', 'responsive-menu'); ?>:
-            </span>
-
-            <br />
-
-            <span class='success'>
-                &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /&gt;
-            </span>
-
-        <?php endif; ?>
 
         <table>
             <tr>
