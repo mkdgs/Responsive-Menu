@@ -133,6 +133,11 @@ Alternatively:
 == Changelog ==
 
 = 2.8 (26th July 2015) =
+* Launched Pro Version 1.0 with:
+	- Ability to use as the single menu on the site (responsive and not)
+	- Option to only show on mobile using wp_is_mobile()
+	- Various colour themes
+	- Header bar creator
 * Added "Reset to default" option
 * Removed Metatag check 
 * Improved transient caching
