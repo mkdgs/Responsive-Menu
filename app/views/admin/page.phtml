@@ -1815,39 +1815,71 @@
 
             </table>
     </div>
-    <div class="import-export">
+    <div class="import-export">   	
+    	
         <h3>Import Options</h3>
-
-
 
         <table>
 
             <tr>
 
                 <td>
-
-                    <input 
-                        type="submit" 
-                        class="button" 
-                        name="RMExport" 
-                        value="<?php _e('Export Options', 'responsive-menu'); ?>"
-                        />
-
                     <br />
 
                     <input
                         type="file" 
                         class="button file" 
                         name="RMImportFile" 
-                        value="<?php _e('Import File', 'responsive-menu'); ?>"
+                        value="<?php _e('Import File', 'responsive-menu-pro'); ?>"
                         />
 
                     <input 
                         type="submit" 
                         class="button" 
                         name="RMImport" 
-                        value="<?php _e('Import Options', 'responsive-menu'); ?>"
+                        value="<?php _e('Import Options From XML', 'responsive-menu-pro'); ?>"
                         />
+                </td>
+
+            </tr>
+
+        </table>
+                
+        <h3>Export Options</h3>
+
+        <table>
+
+            <tr>
+                <td>
+                	<br />
+                    <input 
+                        type="submit" 
+                        class="button" 
+                        name="RMExport" 
+                        value="<?php _e('Export Current Options', 'responsive-menu-pro'); ?>"
+                        />
+                </td>
+            </tr>
+        </table>
+
+        <h3>Reset to defaults</h3>
+
+        <table>
+
+            <tr>
+
+				<td>
+                    <h4 class="divider">
+                        <?php _e('Note'); ?>: 
+                        <?php _e('Please be warned this will reset all your current settings, please export your current files first', 'responsive-menu-pro'); ?>.
+                    </h4>
+                    <input 
+                        type="submit" 
+                        class="button" 
+                        name="RMReset" 
+                        value="<?php _e('Reset ALL Current Options', 'responsive-menu' ); ?>"
+                        />
+					
                 </td>
 
             </tr>

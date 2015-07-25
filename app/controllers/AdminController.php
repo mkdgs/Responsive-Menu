@@ -80,10 +80,16 @@ class RM_AdminController extends RM_BaseController {
 
         endif;
 
-        if( RM_Input::post( 'RMSubmit' ) || RM_Input::post( 'RMImport' ) ) :
+        if( RM_Input::post( 'RMSubmit' ) 
+        || RM_Input::post( 'RMImport' ) 
+		|| RM_Input::post( 'RMReset' ) ) :
                     
             $data = RM_Input::post( 'RMImport' ) ? RM_Import::getData( RM_Input::file( 'RMImportFile' ) ) : RM_Input::post();
 
+			/* Reset to defaults */
+			if( RM_Input::post( 'RMImport' ) )
+				$data = RM_Registry::get( 'defaults' );
+				
             RM_AdminModel::save( $data );
         
             if( ResponsiveMenu::getOption( 'RMExternal' ) ) : 
