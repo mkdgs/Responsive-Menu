@@ -134,10 +134,11 @@ Alternatively:
 
 = 2.8 (26th July 2015) =
 * Launched Pro Version 1.0 with:
-	- Ability to use as the single menu on the site (responsive and not)
+	- Ability to use as the only menu on the site (responsive and desktop)
 	- Option to only show on mobile using wp_is_mobile()
 	- Various colour themes
 	- Header bar creator
+	- Menu Auto-Height option
 * Added "Reset to default" option
 * Removed Metatag check 
 * Improved transient caching
