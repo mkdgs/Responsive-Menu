@@ -139,6 +139,7 @@ Alternatively:
 	- Various colour themes
 	- Header bar creator
 	- Menu Auto-Height option
+	- Background scrolling disabled option
 * Added "Reset to default" option
 * Removed Metatag check 
 * Improved transient caching
