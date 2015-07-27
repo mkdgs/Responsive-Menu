@@ -34,7 +34,7 @@ class RM_Import {
 		
 		foreach( $array as $key => $val ) :
 			/* Need to JSON Decode HTML Shapes */
-			if( $key == 'arrow_shape_active' || $key == 'arrow_shape_inactive' ) :
+			if( $key == 'RMArShpA' || $key == 'RMArShpI' ) :
 				$decoded[$key] = is_array( $val ) ? null : json_decode( base64_decode( $val ) );
 			else :	
 				$decoded[$key] = is_array( $val ) ? null : base64_decode( $val );
