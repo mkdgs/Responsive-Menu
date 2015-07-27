@@ -4,7 +4,7 @@ Donate link: http://responsive.menu/donate/
 Tags: responsive, menu, responsive menu, mobile menu, wordpress responsive menu, wp responsive menu, tablet menu, mobile, tablet, 3 lines, 3 line, three line, three lines
 Requires at least: 3.5.0
 Tested up to: 4.2.2
-Stable tag: 2.8.1
+Stable tag: 2.8.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,11 @@ Alternatively:
 3. Example Front End Expanded Menu
 
 == Changelog ==
+
+= 2.8.2 (28th July 2015) =
+* Pro Version 1.0 updated :
+	- Includes wrap option for menu links
+* Bugfixes
 
 = 2.8.1 (27th July 2015) =
 * Import/Export issue with geometric shapes fixed
