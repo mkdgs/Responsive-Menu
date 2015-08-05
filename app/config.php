@@ -81,7 +81,7 @@ $defaults = array(
     'RMCss' => '',
     
     
-    'RMTitle' => __( 'Menu Title', 'responsive-menu' ),
+    'RMTitle' => null,
     
     
     'RMLineCol' => '#FFFFFF',
