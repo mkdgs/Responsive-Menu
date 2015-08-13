@@ -14,7 +14,7 @@
 $config = array( 
     
     
-    'current_version' => "2.8.2",
+    'current_version' => "2.8.3",
    
     
     'plugins_dir' => plugin_dir_path( __FILE__ ),
@@ -81,7 +81,7 @@ $defaults = array(
     'RMCss' => '',
     
     
-    'RMTitle' => null,
+    'RMTitle' => __( 'Menu Title', 'responsive-menu' ),
     
     
     'RMLineCol' => '#FFFFFF',
