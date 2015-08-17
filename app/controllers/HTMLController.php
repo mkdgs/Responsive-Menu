@@ -31,46 +31,20 @@ class RM_HTMLController extends RM_BaseController {
     static function display( $args = null ) {
         
         /* Unfortunately this messy section is due to shortcodes converting all args to lowercase */
-        
-        if( $args ) :
-            
-            if( $args['rm'] )
-                $args['RM'] = $args['rm'];
-            
-            if( $args['menu'] )
-                $args['RM'] = $args['menu'];
-            
-            if( $args['title'] )
-                $args['RMTitle'] = $args['title'];
-            
-            if( $args['title_link'] )
-                $args['RMTitleLink'] = $args['title_link'];
-            
-            if( $args['title_open'] )
-                $args['RMTitleLoc'] = $args['title_open'];
-            
-            if( $args['html'] )
-                $args['RMHtml'] = $args['html'];
-            
-            if( $args['html_loc'] )
-                $args['RMHtmlLoc'] = $args['html_loc'];
-            
-            if( $args['title_img'] )
-                $args['RMImage'] = $args['title_img'];
-            
-            if( $args['search_loc'] )
-                $args['RMSearchPos'] = $args['search_loc'];
-            
-            if( $args['btn_img'] )
-                $args['RMClickImg'] = $args['btn_img'];
-            
-            if( $args['btn_img_clicked'] )
-                $args['RMClickImgClicked'] = $args['btn_img_clicked'];
-            
-            if( $args['btn_title'] )
-                $args['RMClickTitle'] = $args['btn_title'];
-            
-            endif;
+        if( $args ) { 
+            $args['RM']          = ( isset($args['rm']) )          ? $args['rm']         : '';            
+            $args['RM']          = ( isset($args['menu']) )        ? $args['menu']       : $args['RM'];
+            $args['RMTitle']     = ( isset($args['title']) )       ? $args['title']      :'';
+            $args['RMTitleLink'] = ( isset($args['title_link']) )  ? $args['title_link'] : '';
+            $args['RMTitleLoc']  = ( isset($args['title_open']) )  ? $args['title_open'] : '';
+            $args['RMHtml']      = ( isset($args['html']) )        ? $args['html']       : '';
+            $args['RMHtmlLoc']   = ( isset($args['html_loc']) )    ? $args['html_loc']   : '';
+            $args['RMImage']     = ( isset($args['title_img']) )   ? $args['title_img']  : '';
+            $args['RMSearchPos'] = ( isset($args['search_loc']) )  ? $args['search_loc'] : '';
+            $args['RMClickImg']  = ( isset($args['btn_img']) )     ? $args['btn_img']    : '';
+            $args['RMClickImgClicked'] = ( isset($args['btn_img_clicked']) ) ? $args['btn_img_clicked'] : '';
+            $args['RMClickTitle']      = ( isset( $args['btn_title']) )      ? $args['btn_title']       :'';
+        }
         
         $options = ResponsiveMenu::getOptions();
         
